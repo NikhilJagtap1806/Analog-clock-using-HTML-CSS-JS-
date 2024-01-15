@@ -1,0 +1,1 @@
+let clock=document.getElementsByClassName("clock")
