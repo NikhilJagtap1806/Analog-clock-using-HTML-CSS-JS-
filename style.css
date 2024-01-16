@@ -1,19 +1,29 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
 
 body{
+    /* max-height: 95vh;
+height: 95vh;
+    max-width: 100vw;
+    width: 100vw; */
+    width: 100%;
     height: 100vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(45deg,#101010,#696969);
 }
+
+.container{
+    position: relative;
+}
 .clock{
+   
     display: flex;
-    justify-content:space-between ;
+    justify-content:center ;
+    align-items: center;
     width: 40vw;
     height:40vw;
     border-radius :50%;
@@ -22,4 +32,27 @@ body{
 
 
 
+}
+
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg*var(--num)));
+    inset:15px;
+    text-align: center;
+
+}
+
+.clock span b{
+    transform: rotate(calc(-30deg * var(--num) ));
+    display: inline-block;
+    font-size: 40px;
+}
+
+.clock::before{
+    content: "";
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
 }
