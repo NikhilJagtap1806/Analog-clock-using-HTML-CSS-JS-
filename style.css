@@ -65,8 +65,9 @@ align-items: flex-end;
 
 .hand i{
     width: 8px;
-    height: 180px;
+    height: var(--height);
     background-color: var(--clr);
     position: absolute;
     border-radius: 8px;
+    
 }
