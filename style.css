@@ -56,3 +56,17 @@ height: 95vh;
     background-color: #ffffff;
     position: absolute;
 }
+
+.hand{
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+.hand i{
+    width: 8px;
+    height: 180px;
+    background-color: var(--clr);
+    position: absolute;
+    border-radius: 8px;
+}
