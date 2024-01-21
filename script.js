@@ -1,1 +1,1 @@
-let clock=document.getElementsByClassName("clock")
+let clk=document.getElementsByClassName("clock")
